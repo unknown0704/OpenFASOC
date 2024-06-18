@@ -11,7 +11,7 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     && rm ./Miniconda3-latest-Linux-x86_64.sh
 ENV PATH=/usr/bin/miniconda3/bin:${PATH}
 RUN conda update conda --all -y
-RUN conda install python=3.10 \
+RUN conda install python=3.11.6 \
                    yosys \
                    open_pdks.sky130a \
                    open_pdks.gf180mcuC \
